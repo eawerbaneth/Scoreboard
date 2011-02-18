@@ -1,0 +1,38 @@
+Scoreboard Initial Achievements
+
+Travel
+-Visited 5 States
+-Visited 10 States
+-Gone Abroad
+
+Milestones
+
+Video Games
+
+Around Campus(prototype area)
+
+-Athletic (Played Intramural, Played Club, Played Varsity)
+-Puckman's Greatest Fan (Been to hockey games)
+-Scholar (Complete Freshman, Sophomore, Junior)
+-Graduate (Graduated from RPI)*
+-Institutionalized (Own an RPI laptop)
+-Spirited (Own a piece of RPI apparel)
+-Indecisive (Switch majors)
+-Insomniac (Stayed up for a certain number of hours)
+-Overloaded (Overload for a semester)
+-Jack of All Trades (Worked at RPI while taking classes)
+-Megalomaniac (Participated in student government)
+&Failure (Failed a certain number of classes)
+-Time to Fold (Dropped a certain number of classes)
+-Sleepyhead (Sleep through a class, sleep through a quiz, Sleep through a test)
+-Perfect Attendance (Been to all classes for 1 course, 4 courses, 8 courses)
+-Residence Award (Bronze for each residence you've lived in)
+-Free Room and Board(Been an RA or an LA //gold)
+-Troy (Been to a First Night(?), Lived Off Campus, Worked in Troy)
+-Going the Distance (Travelled to RPI from New York, from outside New York, from outside country)
+-Golden Child(Made Dean's list 1 semester, 3 semesters, 5 semesters)
+
+//for each subcategory, there will be bronze, silver, and gold
+//some categories will have platinum
+
+//Acceptable Losses
