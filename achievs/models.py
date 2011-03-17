@@ -15,6 +15,7 @@ class Gold(models.Model):
 	describ = models.CharField(max_length=500)
 	def __unicode__(self):
 		return self.describ
+		
 class Silver(models.Model):
 	achiev = models.ForeignKey(Achievement)
 	describ = models.CharField(max_length=500)

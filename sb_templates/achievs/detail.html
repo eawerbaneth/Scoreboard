@@ -1,0 +1,13 @@
+<h2>{{ achiev.name }}</h2>
+<ul>
+<!--need to figure out how to not have to do these in for loops-->
+{% for gold in achiev.gold_set.all %}
+	<li>GOLD: {{gold.describ}} </li>
+{% endfor %}
+{% for silver in achiev.silver_set.all %}
+	<li>SILVER: {{silver.describ}} </li>
+{% endfor %}
+{% for bronze in achiev.bronze_set.all %}
+	<li>BRONZE: {{bronze.describ}} </li>
+{% endfor %}
+</ul>

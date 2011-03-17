@@ -1,0 +1,11 @@
+<h1> SCOREBOARD </h1>
+<h2> Achievements </h2>
+{% if latest_achiev_list %}
+    <ul>
+    {% for achiev in latest_achiev_list %}
+        <li><a href="/achievs/{{ achiev.id }}/">{{ achiev.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No achievs are available.</p>
+{% endif %}
