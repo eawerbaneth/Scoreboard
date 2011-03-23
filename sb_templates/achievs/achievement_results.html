@@ -1,0 +1,31 @@
+<h1> SCOREBOARD </h1>
+<h2>YOUR SCORE: xxx </h2>
+<!--{% if object_list %}
+    <ul>
+    {% for object in object_list %}
+	<li>{{object.id}}</li>
+		<ul>
+		{% for level in object.level_set.all %}
+			<li>{{level.level}}: 
+			{% if level.complete%}
+				COMPLETE!
+			{% else %}
+				NOT COMPLETE
+			{% endif %}
+			</li>
+		{%endfor%}
+		</ul>			
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Achievements Available</p>
+{% endif %}-->
+{% if object_list %}
+    <ul>
+    {% for object in object_list %}
+        <li><a href="/achievs/{{ object.id }}/">{{ object.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No achievs are available.</p>
+{% endif %}

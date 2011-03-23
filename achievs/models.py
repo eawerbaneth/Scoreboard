@@ -9,23 +9,41 @@ class Achievement(models.Model):
 	def was_published_today(self):
 		return self.pub_date.date()==datetime.date.today()
 	was_published_today.short_description='Published today?'
-
-class Gold(models.Model):
-	achiev = models.ForeignKey(Achievement)
-	describ = models.CharField(max_length=500)
-	def __unicode__(self):
-		return self.describ
-		
-class Silver(models.Model):
-	achiev = models.ForeignKey(Achievement)
-	describ = models.CharField(max_length=500)
-	def __unicode__(self):
-		return self.describ
 	
-class Bronze(models.Model):
+class Level(models.Model):
 	achiev = models.ForeignKey(Achievement)
-	describ = models.CharField(max_length=500)
+	level= models.CharField(max_length=20)
+	describ = models.CharField(max_length = 500)
+	complete = models.BooleanField(default=False)
 	def __unicode__(self):
-		return self.describ
+		return u'%s: %s' % (self.level, self.describ)
+
+# class Platinum(models.Model):
+	# achiev = models.ForeignKey(Achievement)
+	# describ = models.CharField(max_length=500)
+	# complete = models.BooleanField(default=False)
+	# def __unicode__(self):
+		# return self.describ
+
+# class Gold(models.Model):
+	# achiev = models.ForeignKey(Achievement)
+	# describ = models.CharField(max_length=500)
+	# complete = models.BooleanField(default=False)
+	# def __unicode__(self):
+		# return self.describ
+		
+# class Silver(models.Model):
+	# achiev = models.ForeignKey(Achievement)
+	# describ = models.CharField(max_length=500)
+	# complete = models.BooleanField(default=False)
+	# def __unicode__(self):
+		# return self.describ
+	
+# class Bronze(models.Model):
+	# achiev = models.ForeignKey(Achievement)
+	# describ = models.CharField(max_length=500)
+	# complete = models.BooleanField(default=False)
+	# def __unicode__(self):
+		# return self.describ
 	
 
