@@ -78,7 +78,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'scoreboard.urls'
 
 TEMPLATE_DIRS = (
-	"C:/Users/townse2/Documents/scoreboard/sb_templates"
+	"C:/Users/townse2/Documents/rcos 2011/scoreboard/sb_templates",
+	"C:/Users/townse2/Documents/rcos 2011/scoreboard/sb_templates/achievs",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

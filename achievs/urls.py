@@ -1,19 +1,13 @@
 from django.conf.urls.defaults import *
+from achievs.models import Achievement
 
-# Uncomment the next two lines to enable the admin:
-from django.contrib import admin
-admin.autodiscover()
+info_dict = {
+	'queryset': Achievement.objects.all(),
+}
 
-urlpatterns = patterns('achievs.views',
-	(r'^$', 'index'),
-	(r'^(?P<achiev_id>\d+)/$', 'detail'),
-
-    #(r'^achievs/(?P<achiev_id>\d+)/results/$', 'achievs.views.results'),
-    #(r'^achievs/(?P<achiev_id>\d+)/vote/$', 'achievs.views.vote'),
-
-    # Example:
-    # (r'^scoreboard/', include('scoreboard.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+urlpatterns = patterns('',
+	(r'^$', 'django.views.generic.list_detail.object_list', info_dict),
+    (r'^(?P<object_id>\d+)/$', 'django.views.generic.list_detail.object_detail', info_dict),
+	#url(r'^(?P<object_id>\d+)/results/$', 'django.views.generic.list_detail.object_detail', dict(info_dict, template_name='achievs/results.html'), 'achiev_results'),
+	#(r'^(?P<achiev_id>\d+)/compile/$', 'achievs.views.compile'),
 )
