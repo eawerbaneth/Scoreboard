@@ -1,0 +1,19 @@
+<h2>{{ object.name }}</h2>
+
+<form action="/achievs/{{object.id}}/compile/" method="post">
+{% csrf_token %}
+<!--need to figure out how to not have to do these in for loops-->
+{% for gold in object.gold_set.all %}
+	<input type= "checkbox" name= "choice" value="Gold"/>
+	GOLD: {{gold.describ}} <br />
+{% endfor %}
+{% for silver in object.silver_set.all %}
+	<input type= "checkbox" name= "choice" value="Silver"/>
+	SILVER: {{silver.describ}} <br />
+{% endfor %}
+{% for bronze in object.bronze_set.all %}
+	<input type= "checkbox" name= "choice" value="Bronze"/>
+	BRONZE: {{bronze.describ}} <br />
+{% endfor %}
+<input type ="submit" value="compile" />
+</form>
