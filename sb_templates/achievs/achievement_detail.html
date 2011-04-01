@@ -1,0 +1,8 @@
+<h2>{{ object.name }}</h2>
+<ul>
+{% for level in object.level_set.all %}
+	<li>{{level.level}}: {{level.describ}} </li> <br />
+{% endfor %}
+</ul>
+
+
