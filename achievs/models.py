@@ -18,32 +18,5 @@ class Level(models.Model):
 	def __unicode__(self):
 		return u'%s: %s' % (self.level, self.describ)
 
-# class Platinum(models.Model):
-	# achiev = models.ForeignKey(Achievement)
-	# describ = models.CharField(max_length=500)
-	# complete = models.BooleanField(default=False)
-	# def __unicode__(self):
-		# return self.describ
 
-# class Gold(models.Model):
-	# achiev = models.ForeignKey(Achievement)
-	# describ = models.CharField(max_length=500)
-	# complete = models.BooleanField(default=False)
-	# def __unicode__(self):
-		# return self.describ
-		
-# class Silver(models.Model):
-	# achiev = models.ForeignKey(Achievement)
-	# describ = models.CharField(max_length=500)
-	# complete = models.BooleanField(default=False)
-	# def __unicode__(self):
-		# return self.describ
-	
-# class Bronze(models.Model):
-	# achiev = models.ForeignKey(Achievement)
-	# describ = models.CharField(max_length=500)
-	# complete = models.BooleanField(default=False)
-	# def __unicode__(self):
-		# return self.describ
-	
 
